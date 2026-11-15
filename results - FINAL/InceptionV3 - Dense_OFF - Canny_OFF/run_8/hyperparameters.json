@@ -1,0 +1,9 @@
+{
+    "learning_rate_fine_tune": 1e-05,
+    "dropout_rate": 0.477425816290519,
+    "lr_scheduler_factor": 0.5,
+    "lr_scheduler_patience": 3,
+    "kernel_regularizer_l2": 0.0,
+    "use_dense_layer": false,
+    "use_canny": false
+}
