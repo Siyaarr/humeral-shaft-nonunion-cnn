@@ -52,7 +52,7 @@ python analysis/auc_ci_bootstrap.py           # AUC 95% CI from data/test_set_pr
 
 `analysis/auc_ci_bootstrap.py` runs without the image data and reproduces the reported AUC of 0.550 (95% CI 0.376 to 0.718).
 
-The classification threshold reported in the article (0.890) is the one that maximised the F1-score on the test set, so the threshold-dependent metrics are best-case estimates (see the article).
+The classification threshold reported in the article (0.890) was selected as the F1-maximising point of the precision–recall curve on the test set, so the threshold-dependent metrics are best-case estimates (see the article). A radiograph is classified as non-healed when its predicted probability is strictly greater than the threshold, as in `src/final_testing.py`; with the stored threshold in `predictions.npz` this gives the confusion matrix reported in the article (22 true positives, 55 false positives, 5 false negatives, 21 true negatives).
 
 ## License
 
